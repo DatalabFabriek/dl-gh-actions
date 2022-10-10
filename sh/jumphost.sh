@@ -32,7 +32,7 @@ dl_jumphost_make_configfile() {
     rm -f ~/.ssh/config && \
         mkdir -p ~/.ssh/ && \
         touch ~/.ssh/config && \
-        rm ~/dljumphost_identity_*.txt 
+        rm -f ~/dljumphost_identity_*.txt 
 
     # Loop through any & all jumphosts and configure them
     local i=1
@@ -87,7 +87,7 @@ dl_jumphost_restore_configfile() {
     if [ -f ~/.ssh/config.back ]; then
         mv ~/.ssh/config.back ~/.ssh/config
     else
-        rm ~/.ssh/config
+        rm -f ~/.ssh/config
     fi
 
     rm ~/dljumphost_identity_*
