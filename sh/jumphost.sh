@@ -7,8 +7,8 @@
 # 
 # ###
 # Example ENV variables:
-#DL_JUMPHOST_CONN_1="dljumphost@dl-vm-hub.datalab.nl:22"
-#DL_JUMPHOST_CONN_2="dljumphost@phd.veer0318.net:22"
+#DL_JUMPHOST_CONN_1="dljumphost@jumpserver1:22"
+#DL_JUMPHOST_CONN_2="dljumphost@jumpserver2:22"
 # 
 # DL_JUMPHOST_SSHKEY_1=$(cat << EOF
 # -----BEGIN OPENSSH PRIVATE KEY-----
@@ -17,7 +17,7 @@
 # EOF
 # )
 # 
-#DL_DEPLOYHOST_CONN="deploy@hkh-vm-analytics.datalab.nl:22"
+#DL_DEPLOYHOST_CONN="deploy@targetserver:22"
 #DL_DEPLOYHOST_SSHKEY=$(cat <<EOF
 # ...
 #EOF
